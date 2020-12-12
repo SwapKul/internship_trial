@@ -1,0 +1,231 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Shanti&display=swap" rel="stylesheet"> 
+
+    <title>Document</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Kanit', sans-serif;
+
+        }
+        
+        .bold {
+
+            font-weight: bold;
+
+        }
+
+        .container {
+
+            color: #fff;
+            margin: auto;
+            width: 75%;
+
+        }
+
+        .row {
+
+            background-color: #4d248c;
+
+        }
+
+        .row > div {
+
+            padding: 5%;
+            margin: auto;
+
+        }
+
+        div.translucent_box {
+
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 2%;
+            margin-left: -72px;
+            padding-left: 72px;
+            margin-bottom: 7%;
+
+        }
+
+        .coupons {
+
+            margin: auto;
+            width: 75%;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 3%;
+            height: 170px;
+
+        }
+
+        .text_vertical {
+
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            width: 60px;
+            font-size: 15px;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 170px;
+            padding: 5%;
+
+        }
+
+        .circle {
+
+            display: block;
+            width: 100px;
+            height: 50px;
+            top: -50px;
+            left: 0;
+            position: absolute;
+
+        }
+
+        .circle::after{
+
+            content: '';
+            width: 35px;
+            height: 35px;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            background: #3d0b7c;
+            position: absolute;
+            top: 115px;
+            right: 20px;
+
+        }
+
+        .disc {
+
+            font-size: 35px;
+
+        }
+
+        .info {
+
+            text-align: left;
+            padding: 2%;
+            font-size: 0.75em;
+
+        }
+
+        .extra {
+
+            color: #000;
+
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" style="text-align: center;">
+
+        <div class="row">
+
+            <div class="col-lg-6" style="background-color: #4d248c; letter-spacing: 1; font-size: 1.15em;">
+
+                <h3 style="margin-bottom: 10%;">Hello <span style="color: orange; letter-spacing: none;">Amit Lulla,</span></h3>
+                
+                <p style="margin-bottom: 5%;">You have a reward balance of <br>USD <span class="bold">24.10</span>, <span class="bold">90</span> points, <span class="bold">30</span> diamonds, and n X</p>
+                <div class="translucent_box">Redeemable Currency Available : <span class="bold" style="color: #00fd1f;">USD 24.10</span></div>
+                <p>Earn 1 Point for every <span class="bold">₹1.00</span> spent</p>
+                <p style="margin-bottom: 10%;"><span class="bold">100</span> Points gets you <span class="bold">₹10.00</span></p>
+                <button type="button" class="btn btn-danger" style="border-radius: 50px; padding: 2% 12%; background-color: #d9001d;">Close</button>
+
+            </div>
+
+            <div class="col-lg-6" style="background-color: #3d0b7c;">
+
+                <p>AVAILABLE DISCOUNTS</p>
+                
+                <div class="coupons" style="background-color: #4d9ff3; background-image: linear-gradient(to right, #4d9ef3, #00edd3);">
+                    
+                    <div class="text_vertical" style="background-color: #8fc3fc;">HOODIE<span class="circle"></span></div>
+                    
+                    <div class="info">
+                        
+                        <span class="disc">15%</span>
+                        
+                        <p class="text">Discount on woo-hoodie up to 300 item(s)<br>
+                            15% against 60 Reward type: <span class="bold">Smiles.</span>
+                        </p>
+                        
+                        <span class="extra">ADD ITEM TO AVAIL DISCOUNT</span>
+                        
+                        <div class="circle2"></div>
+                    
+                    </div>
+                    
+                </div>
+                
+                <div class="coupons" style="background-color: #ff8093; background-image: linear-gradient(to right, #feb290, #ff7b8e)">
+                    
+                    <div class="text_vertical" style="background-color: #fec85e;;">RECIEPT-REWARD<span class="circle"></span></div>
+
+                    <div class="info">
+
+                        <span class="disc">10%</span>
+
+                        <p class="text">Discount on reciept : 10% against<br>
+                            2 Reward type: <span class="bold">Diamond.</span>
+                        </p>
+
+                        <span class="extra">BUY MORE TO GET DISCOUNT</span>
+                        
+
+                    </div>
+                
+                </div>
+                
+                <div class="coupons" style="background-color: #a1bcff; background-image: linear-gradient(to right, #d6b4fe, #7978c7)">
+                    
+                    <div class="text_vertical" style="background-color: #da7adb;">MULTIPLEITEM<span class="circle"></span></div>
+                
+                    <div class="info">
+
+                        <span class="disc">5%</span>
+
+                        <p class="text">Discount on Polo T-shirt, Sunglasses items<br>
+                            5% against 3 Reward type: <span class="bold">Smiles.</span>
+                        </p>
+
+                        <span class="extra">ADD ITEM TO AVAIL DISCOUNT</span>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>
